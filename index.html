@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Redirect and Embed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #bot-iframe {
+            width: 100%;
+            height: 500px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the Bot Page</h1>
+
+    <p>Click the button below to visit the bot directly, or see the embedded bot below.</p>
+
+    <!-- Button to redirect to the bot on a third-party site in a new window -->
+    <form action="https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2025/01/22/06/20250122064823-5C9QMLD0.json" method="get" target="_blank">
+        <input type="submit" value="Visit Bot Site in New Window">
+    </form>
+
+    <h2>Or view the bot here:</h2>
+
+    <!-- Iframe to embed the bot directly on the page -->
+    <iframe id="bot-iframe" src="https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2025/01/22/06/20250122064823-5C9QMLD0.json" title="Bot View"></iframe>
+
+</body>
+</html>
